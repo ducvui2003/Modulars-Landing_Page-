@@ -39,6 +39,47 @@ html {
   font-weight: 500;
   line-height: 1.55556;
 }
+.heading.heading-decor {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.heading.heading-decor::after {
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  background-color: currentColor;
+  margin-top: 10px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  color: var(--primary-color-black, #152427);
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625;
+}
+.title::before {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: currentColor;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, line default);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-1 {
+  --line-clamp: 1;
+}
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
 .btn {
   --height: 57px;
   color: #fff;

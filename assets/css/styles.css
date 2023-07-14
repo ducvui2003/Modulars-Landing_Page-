@@ -196,3 +196,115 @@
   bottom: -45px;
   z-index: 1;
 }
+/* Agency */
+.agency {
+  margin-top: 130px;
+}
+.agency-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 76px 122px;
+  border-radius: 100.5px;
+  background-color: #e2eddf;
+}
+.agency__brand-wrapper {
+  flex: 1;
+}
+.agency__brand {
+  width: 100%;
+  object-fit: cover;
+}
+/* Services */
+.services {
+  margin-top: 106px;
+}
+.services__content {
+  position: relative;
+  margin-right: 73px;
+}
+.services__heading {
+  margin-top: 12px;
+  max-width: 520px;
+}
+.services__cta {
+  position: absolute;
+  right: 0;
+  top: calc(50% + 12px);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.services__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  color: var(--primary-color-black);
+  background-color: #e2eddf;
+  border: 0px;
+  padding: 0px;
+}
+.services__btn:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary-color-black);
+}
+
+.services-btn__icon-right {
+  transform: rotate(-180deg);
+}
+/* Service card */
+.services__list {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 76px;
+}
+.services__card {
+  flex: 1;
+  transition: all 0.3 ease-in;
+}
+.services__card:hover {
+  border-radius: 20px;
+  box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+.services__card:hover .services-card__content {
+  margin-left: 18px;
+}
+.services-card__thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 318px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+}
+.services-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services-card__content {
+  margin: 24px 84px 24px 0px;
+  transition: all 0.3 ease-in;
+}
+.services-card__heading {
+  color: var(--primary-color-black, #152427);
+  font-family: var(--secondary-font);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.services-card__desc {
+  margin-top: 18px;
+  color: var(--text-color-light-gray, #7d8188);
+  font-family: var(--secondary-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.71429; /* 171.429% */
+}
