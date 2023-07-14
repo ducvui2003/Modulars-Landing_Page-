@@ -3,21 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest"
+        href="./assets/favicon/site.webmanifest" />
   <!-- Embed fonts -->
-  <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+  <link rel="stylesheet"
+        href="./assets/fonts/stylesheet.css" />
   <!-- Fonts icon -->
-  <script src="https://kit.fontawesome.com/ed5ddce74d.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ed5ddce74d.js"
+          crossorigin="anonymous"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet"
+        href="./assets/css/reset.css" />
+  <link rel="stylesheet"
+        href="assets/css/base.css" />
+  <link rel="stylesheet"
+        href="./assets/css/styles.css" />
+  <link rel="stylesheet"
+        href="./assets/css/responsive.css">
   <title>Modulars</title>
 </head>
 
@@ -25,31 +42,64 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <div class="header__body">
-        <div class="logo">
-          <img class="logo" src="./assets/images/logo.svg" alt="" />
+      <div class="header__body m-header__body">
+
+        <div class="logo m-header__logo">
+          <img class="logo__img"
+               src="./assets/images/logo.svg"
+               alt="" />
         </div>
-        <nav class="header__nav">
-          <ul class="header-nav__list">
+
+        <!-- Open nav mobile -->
+        <label class="m-header-nav__label--open header-nav__label"
+               for="header-nav__radio--open">
+          <i class="m-header-nav__icon fa-solid fa-bars"></i>
+        </label>
+
+        <!-- Radio -->
+        <input type="radio"
+               name="nav-radio"
+               id="header-nav__radio--open"
+               class="m-header-nav__open"
+               hidden>
+        <input type="radio"
+               name="nav-radio"
+               id="header-nav__radio--close"
+               class="m-header-nav__close"
+               hidden>
+
+        <nav class="header__nav m-header__nav">
+
+          <!-- Close nav mobile -->
+          <label for="header-nav__radio--close"
+                 class="m-header-nav__label--close">
+            <i class="m-header-nav__icon fa-solid fa-xmark"></i>
+          </label>
+          <ul class="header-nav__list m-header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#!">Home</a>
+              <a class="header-nav__link m-header-nav__link"
+                 href="#!">Home</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#!">About</a>
+              <a class="header-nav__link m-header-nav__link"
+                 href="#!">About</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#!">Blog</a>
+              <a class="header-nav__link m-header-nav__link"
+                 href="#!">Blog</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#!">Contact</a>
+              <a class="header-nav__link m-header-nav__link"
+                 href="#!">Contact</a>
             </li>
           </ul>
         </nav>
-        <div class="header__cta">
-          <button class="header-cta__btn btn">Sign up</button>
+
+        <div class="header__cta m-header__cta">
+          <button class="header-cta__btn m-header-cta__btn btn">Sign up</button>
         </div>
       </div>
-      <span class="header__decor"></span>
+      <span class="header__decor m-header__decor m-hide "></span>
     </div>
   </header>
   <main class="main">
@@ -58,7 +108,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero__body">
-          <div class="hero-left">
+          <div class="hero-left ">
             <h1 class="hero__heading heading lv1">
               We’re a creative design agency.
             </h1>
@@ -68,62 +118,122 @@
             </p>
             <div class="hero__cta">
               <button class="hero-cta__btn btn">Get in touch</button>
-              <a class="btn-cta__link" href="#!">
+              <a class="btn-cta__link"
+                 href="#!">
                 <span class="btn-cta-link__icon--outer"><i
-                    class="btn-cta-link__icon fa-solid fa-play"></i></span>Watch Video
+                     class="btn-cta-link__icon fa-solid fa-play"></i></span>Watch Video
               </a>
             </div>
-            <div class="hero__decor-wrapper"><img class="hero__decor"
-                src="./assets/images/hero-decor-01.svg" alt=""></div>
+            <div class="hero__decor-wrapper m-hide"><img class="hero__decor"
+                   src="./assets/images/hero-decor-01.svg"
+                   alt=""></div>
           </div>
 
           <div class="hero-right">
+
+            <!-- Hero img -->
             <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-01.png" alt="" class="hero__img">
+              <img src="./assets/images/hero-img-01.png"
+                   alt=""
+                   class="hero__img">
             </div>
             <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-02.png" alt="" class="hero__img">
+              <img src="./assets/images/hero-img-02.png"
+                   alt=""
+                   class="hero__img">
             </div>
             <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-03.png" alt="" class="hero__img">
+              <img src="./assets/images/hero-img-03.png"
+                   alt=""
+                   class="hero__img">
             </div>
+
+            <!-- Hero decor PC-->
             <div class="hero__decor-eclipse">
             </div>
-            <div class="hero__decor-wrapper">
-              <img src="./assets/images/hero-decor-01.svg" alt="" class="hero__decor">
+            <div class="hero__decor-wrapper hero__decor-wrapper--flower m-hide">
+              <img src="./assets/images/hero-decor-01.svg"
+                   alt=""
+                   class="hero__decor">
             </div>
-            <div class="hero__decor-wrapper">
-              <img src="./assets/images/hero-decor-02.svg" alt="" class="hero__decor">
+            <div class="hero__decor-wrapper hero__decor-wrapper--line m-hide">
+              <img src="./assets/images/hero-decor-02.svg"
+                   alt=""
+                   class="hero__decor">
+            </div>
+
+            <!-- Hero decor Mobile-->
+            <div
+                 class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-04 pc-hide">
+              <img src="./assets/images/hero-decor-01.svg"
+                   alt=""
+                   class="hero__decor">
+            </div>
+
+            <div
+                 class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-03 pc-hide">
+              <img src="./assets/images/hero-decor-01.svg"
+                   alt=""
+                   class="hero__decor">
+            </div>
+            <div class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-02
+             pc-hide">
+              <img src="./assets/images/hero-decor-03.svg"
+                   alt=""
+                   class="hero__decor">
+            </div>
+            <div
+                 class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-01 pc-hide">
+              <img src="./assets/images/hero-decor-03.svg"
+                   alt=""
+                   class="hero__decor">
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Agency -->
-    <section class="agency">
+    <article class="agency">
       <div class="container">
         <div class="agency-body">
-          <a href="https://www.google.com/" target="_blank" class="agency__brand-wrapper">
-            <img src="./assets/images/logo_google.svg" alt="logo_google" class="agency__brand">
+          <a href="https://www.google.com/"
+             target="_blank"
+             class="agency__brand-wrapper">
+            <img src="./assets/images/logo_google.svg"
+                 alt="logo_google"
+                 class="agency__brand">
           </a>
-          <a href="https://slack.com/" target="_blank" class="agency__brand-wrapper">
-            <img src="./assets/images/logo_slack.svg" alt="logo_slack" class="agency__brand">
+          <a href="https://slack.com/"
+             target="_blank"
+             class="agency__brand-wrapper">
+            <img src="./assets/images/logo_slack.svg"
+                 alt="logo_slack"
+                 class="agency__brand">
           </a>
-          <a href="https://discord.com/" target="_blank" class="agency__brand-wrapper">
-            <img src="./assets/images/logo_discord.svg" alt="logo_discord"
-              class="agency__brand agency__brand--discord">
+          <a href="https://discord.com/"
+             target="_blank"
+             class="agency__brand-wrapper">
+            <img src="./assets/images/logo_discord.svg"
+                 alt="logo_discord"
+                 class="agency__brand agency__brand--discord">
           </a>
-          <a href="https://www.riotinto.com/" target="_blank" class="agency__brand-wrapper">
-            <img src="./assets/images/logo_RioTinto.svg" alt="logo_RioTinto" class="agency__brand">
+          <a href="https://www.riotinto.com/"
+             target="_blank"
+             class="agency__brand-wrapper">
+            <img src="./assets/images/logo_RioTinto.svg"
+                 alt="logo_RioTinto"
+                 class="agency__brand">
           </a>
-          <a href="https://www.heroku.com/" target="_blank" class="agency__brand-wrapper">
-            <img src="./assets/images/logo_heroku.svg" alt="logo_heroku" class="agency__brand">
+          <a href="https://www.heroku.com/"
+             target="_blank"
+             class="agency__brand-wrapper agency__brand-wrapper--heroku">
+            <img src="./assets/images/logo_heroku.svg"
+                 alt="logo_heroku"
+                 class="agency__brand ">
           </a>
         </div>
       </div>
-
-    </section>
+    </article>
 
     <!-- Services -->
     <section class="services">
@@ -132,23 +242,33 @@
           <p class="services__title title">OUR SERVICES</p>
           <h2 class="services__heading heading lv2 heading-decor">We offer a wide range of design
             services</h2>
-          <div class="services__cta">
+          <div class="services__cta ">
             <button class="services__btn">
-              <svg class="services-btn__icon  services-btn__icon--left" width="22" height="13"
-                viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
+              <svg class="services-btn__icon  services-btn__icon--left"
+                   width="22"
+                   height="13"
+                   viewBox="0 0 22 13"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
               </svg>
 
               <button class="services__btn">
-                <svg class="services-btn__icon services-btn__icon-right" width="22" height="13"
-                  viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
+                <svg class="services-btn__icon services-btn__icon-right"
+                     width="22"
+                     height="13"
+                     viewBox="0 0 22 13"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
               </button>
           </div>
@@ -159,7 +279,9 @@
           <article class="services__card">
             <a href="#!">
               <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-01.png" alt="" class="services-card__img">
+                <img src="./assets/images/card-thumb-01.png"
+                     alt=""
+                     class="services-card__img">
               </figure>
             </a>
             <div class="services-card__content">
@@ -176,7 +298,9 @@
           <article class="services__card">
             <a href="#!">
               <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-02.png" alt="" class="services-card__img">
+                <img src="./assets/images/card-thumb-02.png"
+                     alt=""
+                     class="services-card__img">
               </figure>
             </a>
             <div class="services-card__content">
@@ -193,7 +317,9 @@
           <article class="services__card">
             <a href="#!">
               <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-03.png" alt="" class="services-card__img">
+                <img src="./assets/images/card-thumb-03.png"
+                     alt=""
+                     class="services-card__img">
               </figure>
             </a href="#!">
             <div class="services-card__content">

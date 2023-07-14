@@ -16,7 +16,11 @@ html {
 }
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
+}
+.logo__img {
+  width: 100%;
 }
 .heading {
   color: var(--primary-color-black, #152427);
@@ -40,17 +44,15 @@ html {
   line-height: 1.55556;
 }
 .heading.heading-decor {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+  position: relative;
 }
 .heading.heading-decor::after {
   content: "";
+  position: absolute;
   display: inline-block;
   width: 66px;
   height: 2px;
   background-color: currentColor;
-  margin-top: 10px;
 }
 .title {
   display: flex;
@@ -82,19 +84,22 @@ html {
 }
 .btn {
   --height: 57px;
+  height: var(--height);
+  display: inline-block;
+  padding: 0px;
+  border: 0px;
+  outline: none;
+  padding-inline: 54px 52px;
+  border-radius: 40px;
+
   color: #fff;
+  background-color: #143c3c;
   text-align: center;
   font-family: var(--primary-font);
   line-height: var(--height);
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
-  display: inline-block;
-  padding: 0px;
-  border: 0px;
-  padding-inline: 54px 52px;
-  border-radius: 40px;
-  background-color: #143c3c;
 }
 .btn:hover {
   cursor: pointer;
