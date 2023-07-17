@@ -27,8 +27,12 @@
           crossorigin="anonymous"></script>
 
   <!-- CSS -->
+  <!-- Rest -->
   <link rel="stylesheet"
         href="./assets/css/reset.css" />
+  <!-- Grid system -->
+  <link rel="stylesheet"
+        href="./assets/css/grid.css">
   <link rel="stylesheet"
         href="assets/css/base.css" />
   <link rel="stylesheet"
@@ -39,154 +43,161 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header__body m-header__body">
+  <div class="grid wide">
+    <!-- Header -->
+    <div class="row">
+      <div class="col c-12 m-12 l-12">
+        <header class="header ">
+          <div class="header__body">
+            <!-- Logo -->
+            <div class="logo m-header__logo">
+              <img class="logo__img"
+                   src="./assets/images/logo.svg"
+                   alt="" />
+            </div>
 
-        <div class="logo m-header__logo">
-          <img class="logo__img"
-               src="./assets/images/logo.svg"
-               alt="" />
-        </div>
+            <!-- Open nav mobile -->
+            <label class="m-header-nav__label--open header-nav__label"
+                   for="header-nav__radio--open">
+              <i class="m-header-nav__icon fa-solid fa-bars"></i>
+            </label>
 
-        <!-- Open nav mobile -->
-        <label class="m-header-nav__label--open header-nav__label"
-               for="header-nav__radio--open">
-          <i class="m-header-nav__icon fa-solid fa-bars"></i>
-        </label>
+            <!-- Radio -->
+            <input type="radio"
+                   name="nav-radio"
+                   id="header-nav__radio--open"
+                   class="m-header-nav__open"
+                   hidden>
+            <input type="radio"
+                   name="nav-radio"
+                   id="header-nav__radio--close"
+                   class="m-header-nav__close"
+                   hidden>
 
-        <!-- Radio -->
-        <input type="radio"
-               name="nav-radio"
-               id="header-nav__radio--open"
-               class="m-header-nav__open"
-               hidden>
-        <input type="radio"
-               name="nav-radio"
-               id="header-nav__radio--close"
-               class="m-header-nav__close"
-               hidden>
+            <nav class="header__nav m-header__nav">
 
-        <nav class="header__nav m-header__nav">
+              <!-- Close nav mobile -->
+              <label for="header-nav__radio--close"
+                     class="m-header-nav__label--close">
+                <i class="m-header-nav__icon fa-solid fa-xmark"></i>
+              </label>
+              <ul class="header-nav__list m-header-nav__list">
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Home</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">About</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Blog</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Contact</a>
+                </li>
+              </ul>
+            </nav>
 
-          <!-- Close nav mobile -->
-          <label for="header-nav__radio--close"
-                 class="m-header-nav__label--close">
-            <i class="m-header-nav__icon fa-solid fa-xmark"></i>
-          </label>
-          <ul class="header-nav__list m-header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link m-header-nav__link"
-                 href="#!">Home</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link m-header-nav__link"
-                 href="#!">About</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link m-header-nav__link"
-                 href="#!">Blog</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link m-header-nav__link"
-                 href="#!">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header__cta m-header__cta">
-          <button class="header-cta__btn m-header-cta__btn btn">Sign up</button>
-        </div>
+            <div class="header__cta m-header__cta">
+              <button class="header-cta__btn m-header-cta__btn btn">Sign up</button>
+            </div>
+          </div>
+          <span class="header__decor m-header__decor m-hide "></span>
+        </header>
       </div>
-      <span class="header__decor m-header__decor m-hide "></span>
     </div>
-  </header>
-  <main class="main">
+  </div>
 
+  <main class="main grid wide">
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <div class="hero__body">
-          <div class="hero-left ">
-            <h1 class="hero__heading heading lv1">
-              We’re a creative design agency.
-            </h1>
-            <p class="hero__desc desc">
-              A brilliant, modular agency template for startup’s build yours
-              toady.
-            </p>
-            <div class="hero__cta">
-              <button class="hero-cta__btn btn">Get in touch</button>
-              <a class="btn-cta__link"
-                 href="#!">
-                <span class="btn-cta-link__icon--outer"><i
-                     class="btn-cta-link__icon fa-solid fa-play"></i></span>Watch Video
-              </a>
+      <div class="row">
+        <div class="hero-body">
+          <div class="col l-4 c-12 ">
+            <div class="hero-left">
+              <h1 class="hero__heading heading lv1">
+                We’re a creative design agency.
+              </h1>
+              <p class="hero__desc desc">
+                A brilliant, modular agency template for startup’s build yours
+                toady.
+              </p>
+              <div class="hero__cta">
+                <button class="hero-cta__btn btn">Get in touch</button>
+                <a class="btn-cta__link"
+                   href="#!">
+                  <span class="btn-cta-link__icon--outer"><i
+                       class="btn-cta-link__icon fa-solid fa-play"></i></span>Watch Video
+                </a>
+              </div>
+              <div class="hero__decor-wrapper m-hide"><img class="hero__decor"
+                     src="./assets/images/hero-decor-01.svg"
+                     alt=""></div>
             </div>
-            <div class="hero__decor-wrapper m-hide"><img class="hero__decor"
-                   src="./assets/images/hero-decor-01.svg"
-                   alt=""></div>
           </div>
 
-          <div class="hero-right">
+          <div class="col l-7 c-12 l-o-1">
+            <div class="hero-right ">
+              <!-- Hero img -->
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-01.png"
+                     alt=""
+                     class="hero__img">
+              </div>
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-02.png"
+                     alt=""
+                     class="hero__img">
+              </div>
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-03.png"
+                     alt=""
+                     class="hero__img">
+              </div>
 
-            <!-- Hero img -->
-            <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-01.png"
-                   alt=""
-                   class="hero__img">
-            </div>
-            <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-02.png"
-                   alt=""
-                   class="hero__img">
-            </div>
-            <div class="hero__img-wrapper">
-              <img src="./assets/images/hero-img-03.png"
-                   alt=""
-                   class="hero__img">
-            </div>
+              <!-- Hero decor PC-->
+              <div class="hero__decor-eclipse">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--flower m-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--line m-hide">
+                <img src="./assets/images/hero-decor-02.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
 
-            <!-- Hero decor PC-->
-            <div class="hero__decor-eclipse">
-            </div>
-            <div class="hero__decor-wrapper hero__decor-wrapper--flower m-hide">
-              <img src="./assets/images/hero-decor-01.svg"
-                   alt=""
-                   class="hero__decor">
-            </div>
-            <div class="hero__decor-wrapper hero__decor-wrapper--line m-hide">
-              <img src="./assets/images/hero-decor-02.svg"
-                   alt=""
-                   class="hero__decor">
-            </div>
+              <!-- Hero decor Mobile-->
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-04 pc-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
 
-            <!-- Hero decor Mobile-->
-            <div
-                 class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-04 pc-hide">
-              <img src="./assets/images/hero-decor-01.svg"
-                   alt=""
-                   class="hero__decor">
-            </div>
-
-            <div
-                 class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-03 pc-hide">
-              <img src="./assets/images/hero-decor-01.svg"
-                   alt=""
-                   class="hero__decor">
-            </div>
-            <div class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-02
-             pc-hide">
-              <img src="./assets/images/hero-decor-03.svg"
-                   alt=""
-                   class="hero__decor">
-            </div>
-            <div
-                 class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-01 pc-hide">
-              <img src="./assets/images/hero-decor-03.svg"
-                   alt=""
-                   class="hero__decor">
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-03 pc-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-02
+                         pc-hide">
+                <img src="./assets/images/hero-decor-03.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-01 pc-hide">
+                <img src="./assets/images/hero-decor-03.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
             </div>
           </div>
         </div>
@@ -194,39 +205,39 @@
 
     <!-- Agency -->
     <article class="agency">
-      <div class="container">
-        <div class="agency-body">
+      <div class="agency-body">
+        <div class="row agency-body-inner">
           <a href="https://www.google.com/"
              target="_blank"
-             class="agency__brand-wrapper">
+             class="agency__brand-wrapper col l-2_4 c-6">
             <img src="./assets/images/logo_google.svg"
                  alt="logo_google"
                  class="agency__brand">
           </a>
           <a href="https://slack.com/"
              target="_blank"
-             class="agency__brand-wrapper">
+             class="agency__brand-wrapper col l-2_4 c-6 ">
             <img src="./assets/images/logo_slack.svg"
                  alt="logo_slack"
                  class="agency__brand">
           </a>
           <a href="https://discord.com/"
              target="_blank"
-             class="agency__brand-wrapper">
+             class="agency__brand-wrapper col l-2_4 c-6">
             <img src="./assets/images/logo_discord.svg"
                  alt="logo_discord"
                  class="agency__brand agency__brand--discord">
           </a>
           <a href="https://www.riotinto.com/"
              target="_blank"
-             class="agency__brand-wrapper">
+             class="agency__brand-wrapper col l-2_4 c-6">
             <img src="./assets/images/logo_RioTinto.svg"
                  alt="logo_RioTinto"
                  class="agency__brand">
           </a>
           <a href="https://www.heroku.com/"
              target="_blank"
-             class="agency__brand-wrapper agency__brand-wrapper--heroku">
+             class="agency__brand-wrapper col l-2_4 c-6 c-o-3 l-o-0">
             <img src="./assets/images/logo_heroku.svg"
                  alt="logo_heroku"
                  class="agency__brand ">
@@ -237,12 +248,12 @@
 
     <!-- Services -->
     <section class="services">
-      <div class="container services-body">
+      <div class="services-body">
         <div class="services__content">
           <p class="services__title title">OUR SERVICES</p>
           <h2 class="services__heading heading lv2 heading-decor">We offer a wide range of design
             services</h2>
-          <div class="services__cta ">
+          <div class="services__cta m-hide">
             <button class="services__btn">
               <svg class="services-btn__icon  services-btn__icon--left"
                    width="22"
@@ -256,86 +267,168 @@
                       stroke-linecap="round"
                       stroke-linejoin="round" />
               </svg>
+            </button>
 
-              <button class="services__btn">
-                <svg class="services-btn__icon services-btn__icon-right"
-                     width="22"
-                     height="13"
-                     viewBox="0 0 22 13"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-              </button>
+            <button class="services__btn">
+              <svg class="services-btn__icon services-btn__icon-right"
+                   width="22"
+                   height="13"
+                   viewBox="0 0 22 13"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="services__list">
+        <div class="row services__list-outer">
+          <div class=" col l-0 c-1_5">
+            <button class="services__btn">
+              <i class="services-btn__icon fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
 
-          <!-- Service card 1 -->
-          <article class="services__card">
-            <a href="#!">
-              <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-01.png"
-                     alt=""
-                     class="services-card__img">
-              </figure>
-            </a>
-            <div class="services-card__content">
+          <div class="services__list col l-12 c-9  row">
+
+            <!-- Service card 1 -->
+            <article class="services__card col l-4 c-12">
               <a href="#!">
-                <h3 class="services-card__heading line-clamp line-1">Branding</h3>
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-01.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
               </a>
-              <p class="services-card__desc line-clamp line-3">Create beautiful Agency website with
-                Boluethat converts more visitors than
-                any website.</p>
-            </div>
-          </article>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Branding</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
 
-          <!-- Service card 2 -->
-          <article class="services__card">
-            <a href="#!">
-              <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-02.png"
-                     alt=""
-                     class="services-card__img">
-              </figure>
-            </a>
-            <div class="services-card__content">
-              <a href="#!s">
-                <h3 class="services-card__heading line-clamp line-1">Web Design</h3>
-              </a>
-              <p class="services-card__desc line-clamp line-3">Create beautiful Agency website with
-                Boluethat converts more visitors than
-                any website.</p>
-            </div>
-          </article>
-
-          <!-- Service card 3 -->
-          <article class="services__card">
-            <a href="#!">
-              <figure class="services-card__thumbnail">
-                <img src="./assets/images/card-thumb-03.png"
-                     alt=""
-                     class="services-card__img">
-              </figure>
-            </a href="#!">
-            <div class="services-card__content">
+            <!-- Service card 2 -->
+            <article class="services__card col l-4 c-12">
               <a href="#!">
-                <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-02.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
               </a>
-              <p class="services-card__desc line-clamp line-3">Create beautiful Agency website with
-                Boluethat converts more visitors than
-                any website.</p>
-            </div>
-          </article>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Web Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 3 -->
+            <article class="services__card col l-4 c-12">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a href="#!">
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 4 -->
+            <article class="services__card col l-4 c-12">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a href="#!">
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 5 -->
+            <article class="services__card  col l-4 c-12">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a href="#!">
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 6 -->
+            <article class="services__card col l-4 c-12">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a href="#!">
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col l-0 c-1_5">
+            <button class="services__btn btn">
+              <i class="services-btn__icon  services-btn__icon-right fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
+
+
   </main>
   <footer class="footer"></footer>
+  </div>
 </body>
 
 </html>

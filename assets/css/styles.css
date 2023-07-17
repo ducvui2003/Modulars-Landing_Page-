@@ -62,15 +62,18 @@
   );
 }
 /* Hero */
-.hero__body {
+.hero {
+  margin-top: 60px;
+}
+.hero-body {
   display: flex;
   align-items: center;
 }
 .hero-left {
-  width: 38%;
-  margin-right: 73px;
   position: relative;
-  padding-right: 60px;
+}
+.hero__heading {
+  margin-right: 10px;
 }
 .hero__desc {
   margin-top: 20px;
@@ -149,11 +152,13 @@
   right: 30px;
 }
 .hero-right {
+  position: relative;
+
   flex: 1;
   display: flex;
   align-items: center;
   gap: 20px;
-  position: relative;
+
   margin-right: 25px;
 }
 .hero__img-wrapper {
@@ -187,35 +192,23 @@
   width: 100%;
   object-fit: cover;
 }
-/* .hero-right .hero__decor-wrapper:nth-last-child(1) {
-  top: unset;
-  left: unset;
-  bottom: -83px;
-}
-.hero-right .hero__decor-wrapper:nth-last-child(2) {
-  width: 72px;
-  height: 73px;
-  top: unset;
-  left: unset;
-  right: 0;
-  bottom: -45px;
-  z-index: 1;
-} */
+
 /* Agency */
 .agency {
   margin-top: 130px;
 }
 .agency-body {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  /* gap: 60px; */
   padding: 76px 122px;
   border-radius: 100.5px;
   background-color: #e2eddf;
 }
 .agency__brand-wrapper {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .agency__brand {
   width: 100%;
@@ -234,8 +227,8 @@
   max-width: 520px;
 }
 .services__heading::after {
-  right: 120px;
-  bottom: 19px;
+  right: 79px;
+  bottom: 13px;
 }
 .services__cta {
   position: absolute;
@@ -247,9 +240,6 @@
   gap: 17px;
 }
 .services__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -263,20 +253,26 @@
   cursor: pointer;
   background-color: var(--primary-color-black);
 }
-
+.services-btn__icon {
+  display: block;
+  margin-inline: auto;
+}
 .services-btn__icon-right {
   transform: rotate(-180deg);
 }
 /* Service card */
-.services__list {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+.services__list-outer {
   margin-top: 76px;
 }
+.services__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
 .services__card {
-  flex: 1;
-  transition: all 0.3 ease-in;
+  flex-shrink: 0;
+  width: calc((100% - 32px) / 3);
+  margin-right: 16px;
 }
 .services__card:hover {
   border-radius: 20px;
@@ -300,7 +296,6 @@
 }
 .services-card__content {
   margin: 24px 84px 24px 0px;
-  transition: all 0.3 ease-in;
 }
 .services-card__heading {
   color: var(--primary-color-black, #152427);
