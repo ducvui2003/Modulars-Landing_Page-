@@ -207,11 +207,10 @@
     display: none;
   }
   .services__list-outer {
+    margin-top: 48px;
     align-items: center;
   }
-  .services__list {
-    margin-top: 48px;
-  }
+
   .services__card {
     width: 100%;
   }
@@ -227,6 +226,67 @@
     margin-left: 12px;
   }
   .services-card__desc {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+  }
+  /* About */
+  .about {
+    margin-top: 50px;
+  }
+  .about-body {
+    gap: 115px;
+  }
+  .about__media {
+    margin-inline: 38px 20px;
+    gap: 12px;
+  }
+  .about__img-wrapper {
+    height: 257px;
+  }
+  .about__decor--wrapper--flower {
+    width: 38px;
+    height: 38px;
+    top: 0;
+    left: 0;
+  }
+  .about__decor--wrapper--line {
+    width: 286.693px;
+    height: 190.871px;
+    left: -45px;
+    top: 36px;
+  }
+  .about__card {
+    bottom: -37px;
+    right: 10px;
+    padding: 19px 23px 12px;
+  }
+  .about__content {
+    margin-inline: 10px;
+  }
+  .about__heading {
+    margin-top: 12px;
+  }
+  .about__desc {
+    margin-block: 12px 29px;
+    line-height: 1.85714;
+  }
+  .about__stats {
+    gap: 15px;
+  }
+  .about__stats::after {
+    bottom: -5px;
+    right: -4px;
+  }
+  .about__stats ~ .about__stats {
+    margin-top: 20px;
+  }
+  .about-stats__drop-cat {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 2;
+  }
+  .about-stats__desc {
     font-size: 1rem;
     font-weight: 500;
     line-height: 2;
