@@ -215,14 +215,17 @@
   .services__card {
     width: 100%;
   }
+
   .services__btn {
     width: 33px;
     height: 33px;
   }
   .services-card__content {
-    margin: 17px 55px 27px 12px;
+    margin: 17px 55px 27px 0;
   }
-
+  .services__card:hover .services-card__content {
+    margin-left: 12px;
+  }
   .services-card__desc {
     font-size: 1rem;
     font-weight: 500;

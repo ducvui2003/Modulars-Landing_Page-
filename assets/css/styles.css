@@ -267,15 +267,17 @@
 .services__list {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
   overflow: hidden;
 }
+
 .services__card {
   flex-shrink: 0;
   width: calc((100% - 32px) / 3);
   margin-right: 16px;
+  border-radius: 20px;
 }
 .services__card:hover {
-  border-radius: 20px;
   box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 .services__card:hover .services-card__content {
@@ -295,7 +297,7 @@
   object-fit: cover;
 }
 .services-card__content {
-  margin: 24px 84px 24px 0px;
+  margin: 24px 84px 23px 0px;
 }
 .services-card__heading {
   color: var(--primary-color-black, #152427);
@@ -311,4 +313,79 @@
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.71429; /* 171.429% */
+}
+/* About */
+.about {
+  margin-top: 157px;
+}
+.about-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+}
+.about__media {
+  display: flex;
+  gap: 21px;
+  width: 51.8%;
+  margin-top: 13px;
+}
+.about__media .about__img-wrapper:first-child {
+  margin-top: 77px;
+}
+.about__img-wrapper {
+  flex: 1;
+  height: 480px;
+  border-radius: 210px;
+  box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+  overflow: hidden;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__content {
+  flex: 1;
+}
+.about__heading {
+  margin-top: 20px;
+}
+.about__desc {
+  margin-block: 11px 36px;
+}
+.about__stats {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.about__stats ~ .about__stats {
+  margin-top: 58px;
+}
+.about__stats::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -16px;
+  bottom: -20px;
+  height: 1px;
+  background-color: #83a17d;
+}
+.about-stats__drop-cat {
+  color: var(--primary-color-black, #152427);
+
+  font-family: var(--secondary-font);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.2381; /* 123.81% */
+  initial-letter: 2;
+  -webkit-initial-letter: 2;
+}
+.about-stats__desc {
+  color: var(--text-color-light-gray, #7d8188);
+
+  font-family: var(--secondary-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem; /* 171.429% */
 }
