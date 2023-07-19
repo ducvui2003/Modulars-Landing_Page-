@@ -292,8 +292,13 @@
     line-height: 2;
   }
   /* Process */
+  .process__heading {
+    margin-right: 47px;
+  }
   .process__heading::after {
     width: 46px;
+    bottom: 15px;
+    right: 130px;
   }
   .process__list {
     margin: 59px 8px 0;
