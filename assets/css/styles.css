@@ -523,3 +523,105 @@
   font-weight: 500;
   line-height: 2.4rem; /* 171.429% */
 }
+/* Process */
+.process {
+  margin-top: 115px;
+}
+.process__heading {
+  max-width: 477px;
+}
+.process__heading::after {
+  bottom: 15px;
+  right: 29px;
+}
+.process__list {
+  margin-top: 89px;
+}
+.process__item {
+  position: relative;
+  align-items: flex-start;
+  padding: 0px 41px 21px 20px;
+}
+.process__item + .process__item {
+  padding-top: 54px;
+}
+.process__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    #83a17d 4.17%,
+    rgba(131, 161, 125, 0) 36.46%
+  );
+}
+.process-item__drop-cat {
+  color: var(--primary-color-black-green, #143c3c);
+
+  font-family: var(--secondary-font);
+  font-size: 7.2rem;
+  font-weight: 600;
+  line-height: 0.72222;
+}
+.process-item__heading {
+  margin-top: 20px;
+  color: var(--primary-color-black, #152427);
+
+  font-family: var(--secondary-font);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.process-item__link {
+  display: none;
+
+  color: var(--text-color-black-gray, #575d5e);
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.process-item__img-wrapper {
+  display: none;
+}
+.process-item__desc {
+  margin-left: auto;
+  color: var(--text-color-light-gray, #7d8188);
+
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55556;
+}
+.process__item--highlight {
+  position: relative;
+  padding-block: 54px;
+  border-radius: 33px;
+  background: var(--scondery-color-light-green, #e2eddf);
+}
+.process__item--highlight::after {
+  display: none;
+}
+.process__item--highlight .process-item__link {
+  display: block;
+  margin-top: 22px;
+}
+.process__item--highlight .process-item__img-wrapper {
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 444px;
+}
+.process-item__img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.process__item--highlight .process-item__desc {
+  display: none;
+}

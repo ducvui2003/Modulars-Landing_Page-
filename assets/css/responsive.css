@@ -291,6 +291,44 @@
     font-weight: 500;
     line-height: 2;
   }
+  /* Process */
+  .process__heading::after {
+    width: 46px;
+  }
+  .process__list {
+    margin: 59px 8px 0;
+  }
+  .process__item {
+    padding: 0;
+    padding-left: 27px;
+  }
+  .process__item::after {
+    bottom: -18px;
+  }
+  .process-item__drop-cat {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.04;
+  }
+  .process-item__heading {
+    margin-top: 10px;
+
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .process-item__desc {
+    margin-top: 22px;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2;
+  }
+  .process__item--highlight {
+    padding-block: 56px;
+  }
+  .process__item--highlight .process-item__img-wrapper {
+    display: none;
+  }
 }
 /* For screens between 600px and 959px wide */
 @media (min-width: 600px) and (max-width: 959px) {

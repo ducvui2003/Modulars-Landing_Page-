@@ -46,7 +46,7 @@ html {
 .heading.heading-decor {
   position: relative;
 }
-.heading.heading-decor::after {
+.heading-decor::after {
   content: "";
   position: absolute;
   display: inline-block;
