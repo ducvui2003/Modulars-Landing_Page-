@@ -93,7 +93,7 @@
     font-weight: 600;
   }
   /* Hero */
-  .hero {
+  .main .hero {
     margin-top: 55px;
     margin-inline: 10px;
   }
@@ -170,7 +170,7 @@
   }
 
   /* Agency */
-  .agency {
+  .main .agency {
     margin-top: 95px;
     margin-inline: 10px;
   }
@@ -189,7 +189,7 @@
   }
 
   /* Services */
-  .services {
+  .main .services {
     margin-top: 107px;
   }
   .services-body {
@@ -229,7 +229,7 @@
     line-height: 2;
   }
   /* About */
-  .about {
+  .main .about {
     margin-top: 50px;
   }
   .about-body {
@@ -290,6 +290,9 @@
     line-height: 2;
   }
   /* Process */
+  .main .process {
+    margin-top: 50px;
+  }
   .process__heading {
     margin-right: 47px;
   }
@@ -331,6 +334,45 @@
   }
   .process__item--highlight .process-item__img-wrapper {
     display: none;
+  }
+  /* Features */
+  .features {
+    margin-inline: -10px;
+    padding-block: 53px 101px;
+  }
+  .feature__body {
+    padding-inline: 20px;
+  }
+  .features__heading {
+    width: 268px;
+  }
+  .features__heading::after {
+    width: 38px;
+    left: calc(100% + 11px);
+    bottom: 10px;
+  }
+  .features__desc {
+    margin-top: 8px;
+    max-width: 224px;
+  }
+  .features__link {
+    margin-top: 18px;
+  }
+  .features__video-wrapper {
+    margin-top: 136px;
+  }
+  .feature__decor-wrapper--flower {
+    width: 72px;
+    height: 72px;
+    transform: rotate(176.985deg);
+    top: 235px;
+    right: 66px;
+  }
+  .feature__decor-wrapper--line {
+    width: 380.208px;
+    height: 253.13px;
+    top: 254px;
+    right: -87px;
   }
 }
 /* For screens between 600px and 959px wide */

@@ -3,6 +3,8 @@
   --secondary-font: "Poppins", "san serif";
   --primary-color-black: #152427;
   --text-color-black-gray: #575d5e;
+  --primary-color-black-green: #143c3c;
+  --secondary-color-light-green: #e2eddf;
 }
 * {
   box-sizing: border-box;
