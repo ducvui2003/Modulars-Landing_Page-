@@ -374,6 +374,31 @@
     top: 254px;
     right: -87px;
   }
+  /* Sharing */
+  .sharing {
+    margin-inline: 10px;
+  }
+  .sharing__list {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .sharing__balloon {
+    padding: 63px 30px 90px;
+  }
+  .sharing__heading {
+    max-width: 261px;
+  }
+  .sharing__desc {
+    width: 320px;
+    margin-top: 12px;
+  }
+  .sharing__balloon--highlight {
+    margin-bottom: 0;
+  }
+  .sharing-balloon__desc {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
 }
 /* For screens between 600px and 959px wide */
 @media (min-width: 600px) and (max-width: 959px) {
