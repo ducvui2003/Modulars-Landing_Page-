@@ -83,6 +83,9 @@ html {
 .line-clamp.line-1 {
   --line-clamp: 1;
 }
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
 .line-clamp.line-3 {
   --line-clamp: 3;
 }
