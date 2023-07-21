@@ -95,7 +95,7 @@
   /* Hero */
   .main .hero {
     margin-top: 55px;
-    margin-inline: 10px;
+    padding-inline: 10px;
   }
   .hero-body {
     display: block;
