@@ -447,6 +447,45 @@
   .blogs-item__date::after {
     margin-bottom: 15px;
   }
+  /* Footer */
+  .footer {
+    margin: 0 -10px 0;
+    padding: 95px 10px 52px;
+  }
+  .footer__body::after {
+    display: none;
+  }
+  .form__label {
+    font-size: 2.4rem;
+  }
+  .form__body {
+    margin-top: 37px;
+  }
+  .form__body::after {
+    right: 6px;
+  }
+  .form__input {
+    font-size: 2rem;
+    line-height: 2.2;
+  }
+  .form__submit {
+    margin: 0;
+    align-self: flex-end;
+  }
+  .m-footer__label--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  .footer__bars {
+    width: 24px;
+    height: 22px;
+    color: #fff;
+  }
 }
 /* For screens between 600px and 959px wide */
 @media (min-width: 600px) and (max-width: 959px) {
